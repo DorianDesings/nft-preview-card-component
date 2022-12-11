@@ -37,7 +37,6 @@ body {
   width: 85%;
   max-width: 22rem;
   min-width: 320px;
-  margin-inline: auto;
   padding: 1.5rem;
   background-color: var(--bg-card);
   border-radius: 0.9rem;
@@ -99,9 +98,13 @@ body {
 }
 
 .card__info {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
 }
+
 .card__info-item {
   display: flex;
   align-items: center;
@@ -111,17 +114,13 @@ body {
   color: var(--primary-color);
 }
 
-.card__separator {
-  margin-block: 1rem;
-  height: 1px;
-  border: none;
-  background-color: var(--line);
-}
 .card__footer {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding-top: 1rem;
 }
+
 .card__avatar {
   width: 2rem;
   border: 1px solid var(--white);
